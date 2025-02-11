@@ -1,4 +1,4 @@
-export class Producto{ //clase base producto con sus atributos, construcctor, getters y setters
+export class Producto{ //clase base producto con sus atributos, construcctor, getters y setters, sobre la cual seran creados los objetos
   private _id: number;
   private _nombre: string;
   private _descripcion: string;

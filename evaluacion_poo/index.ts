@@ -7,30 +7,31 @@ Evaluacion POO.
 4. Procura que tu codigo tenga calidad.
 5. Coloca como forma de comentarios en tus clases el por que las creaste.
  */
-import { Producto } from './producto';
 import { ProductoServiceImpl } from './productoServiceImpl';
 import { ProductoService } from './productoService';
 
-// Crear una instancia del servicio
+//Crear una instancia del servicio
 const servicioProducto: ProductoService = new ProductoServiceImpl();
 
-// Crear productos
+//Crear productos (venta)
 const producto1 = servicioProducto.crearProducto("engrapadora", "engrapadora chica", 40);
 const producto2 = servicioProducto.crearProducto("libreta", "librera de raya profesional", 30);
 const producto3 = servicioProducto.crearProducto("calculadora", "calculadora basica", 55);
+
+//consultar inventario
 console.log(servicioProducto.obtenerProductos());
 
-// Obtener producto por ID
+//consultar producto por ID
 const productoObtenido = servicioProducto.obtenerProductoPorId(1);
 console.log("Producto obtenido por ID:");
 console.log(productoObtenido);
 
-// Actualizar producto
+//Actualizar producto
 const productoActualizado = servicioProducto.actualizarProducto(1, "engrapadora", "Nueva descripción", 120);
 console.log("Producto después de actualizar:");
 console.log(productoActualizado);
 
-// Eliminar producto
+//restar producto
 const eliminado = servicioProducto.eliminarProducto(2);
 console.log("Producto eliminado:", eliminado);
 console.log("Productos después de eliminar:");
