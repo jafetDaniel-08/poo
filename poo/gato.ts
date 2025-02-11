@@ -1,4 +1,4 @@
-class Gato {
+export class Gato {
     private _name: string;
     private _sex: string;
     private _age: number;
@@ -68,10 +68,3 @@ class Gato {
     }
 
 }
-
-
-let gato1 = new Gato('Oscar','Macho', 2, 3.5, 'Negro','Peludito');
-let gato2 = new Gato('Luna','Hembra', 3, 2,'Calico', 'Esponjosa');
-
-console.log(gato1)
-console.log(gato2)

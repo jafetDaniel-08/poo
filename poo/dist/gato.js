@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Gato = void 0;
 class Gato {
     constructor(name, sex, age, weight, color, texture) {
         this._name = name;
@@ -45,7 +47,4 @@ class Gato {
         this._texture = value;
     }
 }
-let gato1 = new Gato('Oscar', 'Macho', 2, 3.5, 'Negro', 'Peludito');
-let gato2 = new Gato('Luna', 'Hembra', 3, 2, 'Calico', 'Esponjosa');
-console.log(gato1);
-console.log(gato2);
+exports.Gato = Gato;
